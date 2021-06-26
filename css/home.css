@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media screen and (min-width: 320px){
+    section{
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        padding: 28% 15px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+    .circle{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        clip-path: circle(50% at center bottom);
+        background-color: rgb(230 157 69);
+        z-index: -1;
+        
+    }
+    header{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 15px;
+        z-index: 11;
+    }
+    header img.logo{
+        max-width: 50px;
+        max-height: 50px;
+    }
+    div.toggle{
+        background-image: url("../images/menu_bar.png");
+        width: 30px;
+        height: 30px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        z-index: 11;
+    }
+    div.toggle.open {
+        position: fixed;
+        top: 5pxs;
+        right: 10px;
+        background-image: url("../images/close.png");
+        width: 30px;
+        height: 30px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+    .navigatationBar{
+        display: none;
+    }
+    .navigatationBar.open{
+        position: fixed;
+        display: flex;
+        top: 0;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        list-style: none;
+        z-index: 10;
+    }
+    .navigatationBar a{
+        text-decoration: none;
+        color: black;
+    }
+    .navigatationBar li{
+        margin: 10px;
+        font-size: 1.5em;
+    }
+    .navigatationBar a:hover{
+        color: rgb(230 157 69);
+    }
+    a.active{
+        color: rgb(230 157 69);
+    }
+
+    div.content{
+        width: 100%;
+    }
+    div.textBox{
+        width: 100%;
+    }
+    .textBox h2{
+        font-size: 1.6em;
+        line-height: 1.3em;
+    }
+    .textBox span{
+        font-size: 1.2em;
+        color: rgb(230 157 69);
+    }
+    .textBox p{
+        font-size: 0.9em ;
+    }
+    #learnMore{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 4%;
+        width: 90px;
+        height: 30px;
+        border-radius: 30px;
+        background-color: rgb(230 157 69);
+        color: white;
+        text-decoration: none;
+    }
+    div.imageBox{
+        margin-top: 20%;
+        display: flex;
+        width: 100%;
+        min-height: 5px;
+    }
+    div.imageBox img{
+        width: 40%;
+        max-width: 135px;
+        margin: auto;
+    }
+    .social{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        transform: translateY(-50%);
+        float: right;
+        position: absolute;
+        top: 50%;
+        right: 0px;
+    }
+    .social li{
+        list-style: none;
+        transform: scale(0.6);
+    }
+    .thumbNail{
+        display: flex;
+        align-items: center;
+        justify-content: space-between; 
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);   
+        margin-top: 10%;
+        width: 125px;
+    }
+    .thumbNail li{
+        list-style: none;
+    }
+    .thumbNail img{
+        width: 25px;
+    }
+    .thumbNail li:hover{
+        transform: translateY(-10px);
+        transition: linear;
+        transition-duration: 0.5s;
+    }
+}
+@media all and (min-width: 545px)
+{
+    section{
+        padding: 115px 20px;
+    }
+    .circle{
+        clip-path: circle(400px at center bottom);
+    }
+    header{
+        padding: 10px 20px;
+    }
+    header img.logo{
+        max-height: 65px;
+    }
+    .textBox h2 {
+        font-size: 3em;
+        line-height: 1.6em;
+    }
+    .textBox p {
+        font-size: 1.3em;
+    }
+    #learnMore{
+        width: 150px;
+        height: 50px;
+        font-size: 1.5em;
+        margin-top: 30px;
+    }
+    div.imageBox {
+        margin-top: 100px;
+    }
+    div.imageBox img {
+        max-width: 165px;
+    }
+    .thumbNail {
+        bottom: 10px;
+        width: 165px;
+    }
+    .thumbNail img {
+        width: 35px;
+    }
+
+}
+@media all and (min-width: 1025px){
+    .circle {
+        clip-path: circle(600px at right 800px);
+    }
+    section{
+        padding: 115px 80px;
+        flex-direction: row;
+        max-width: 1700px;
+        max-height: 846px;
+        margin:auto;
+    }
+    header {
+        padding: 20px 80px;
+    }
+    header img.logo {
+        width: 75px;
+        max-width: 75px;
+        max-height: fit-content;
+    }
+    .toggle{
+        display: none;
+    }
+    .navigatationBar.open {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        right: 80px;
+        left: auto;
+        width: auto;
+    }
+    .navigatationBar{
+        display: flex;
+    }
+    .navigatationBar li{
+        list-style: none;
+        margin: 20px;
+    }
+    .content{
+        margin: 30px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    div.textBox {
+        max-width: 600px;
+    }
+    div.imageBox {
+        width: 350px;
+        height: 420px;
+        margin-top: 0px;
+        display: flex;
+        justify-content: flex-start;
+    }
+    div.imageBox img {
+        width: 100%;
+        height: fit-content;
+        margin: 0;
+        max-width: 210px;
+    }
+    .thumbNail{
+        width: 250px;
+    }
+    .thumbNail img{
+        width: 50px;
+    }
+
+}

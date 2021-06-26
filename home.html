@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = 'viewport' content='width=device-width, initial-scale=1'>
+    <title>The Phin Coffee - Home</title>
+    <link rel="stylesheet" href="css/home.css">
+    <script src="javascript/home.js"></script>
+</head>
+<body>
+    <section class = "mainPage">
+        <div class ="circle"></div>
+        <header>
+            <img class = "logo" src ="images/logo.png" alt = "logo">
+            <div class = "toggle" onclick="toggleMenu();"></div>
+
+            <ul class = "navigatationBar">
+                <li><a class = "active" href = # >Home</a></li>
+                <li><a href = # >Menu</a></li>
+                <li><a href = # >What's New</a></li>
+                <li><a href = # >Contact</a></li>
+            </ul>
+        </header>
+        <div class = "content">
+            <div class = "textBox">
+                <h2>It's not just coffee.<br>It's <span>The Phin Coffee</span></h2>
+                <p>The Phin Coffee was born out of the pure passion for Vietnamese coffee. Over the time we’ve become famous for consistently delivering delicious Vietnamese coffee in a modern and comfortable environment.</p>
+                <a href ="#" id = "learnMore">Learn more</a>
+            </div>
+            <div class = "imageBox">
+                <img class = "mainImage" src="images/ColdBrewCoffee.png" alt="ColdBrewCoffee">
+            </div>
+            <ul class = "social">
+                <li><a href = # alt = "facebook"><img src = "images/facebook.png"></a></li>
+                <li><a href = # alt = "instagram"><img src = "images/instagram.png"></a></li>
+                <li><a href = # alt = "twitter"><img src = "images/twitter.png"></a></li>
+            </ul>
+            <ul class = "thumbNail">
+                <li><img src = "images/ColdBrewCoffee.png" alt = "coldBrew" onclick="thumbNail(this)"></li>
+                <li><img src = "images/frapucinno.png" alt = "frapucinno" onclick="thumbNail(this)"></li>
+                <li><img src = "images/milk_coffee.png" alt = "milkCoffee" onclick="thumbNail(this)"></li>
+            </ul>
+        </div>
+    </section>
+</body>
